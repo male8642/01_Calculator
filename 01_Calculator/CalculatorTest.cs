@@ -33,6 +33,13 @@ namespace _01_Calculator
             Assert.AreEqual(18, Calculator.Sum(numbers));
 
         }
+
+        [TestMethod]
+        public void Divide()
+        {
+            Assert.AreEqual(5, Calculator.Divide(20, 4));
+        }
+
         [TestMethod]
         public void Multiply()
         {

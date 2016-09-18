@@ -24,6 +24,7 @@ namespace CalculatorApplication
             Console.WriteLine("3 - multiply");
             Console.WriteLine("4 - Factorial");
             Console.WriteLine("5 - Power");
+            Console.WriteLine("6 - Divide");
             
             int z = Convert.ToInt32(Console.ReadLine());
             switch (z)
@@ -37,13 +38,13 @@ namespace CalculatorApplication
 
                 case 2:
 
-                    Console.WriteLine(Calculator.Subtract(y, x));
+                    Console.WriteLine(Calculator.Subtract(x, y));
 
                 break;
 
                 case 3:
 
-                    Console.WriteLine(Calculator.Multiply(y, x));
+                    Console.WriteLine(Calculator.Multiply(x, y));
 
                 break;
 
@@ -58,6 +59,13 @@ namespace CalculatorApplication
                     Console.WriteLine(Calculator.Power(y, x));
 
                 break;
+
+                case 6:
+
+                    Console.WriteLine(Calculator.Divide(x, y));
+
+                 break;
+
 
             }
             Console.ReadKey();
